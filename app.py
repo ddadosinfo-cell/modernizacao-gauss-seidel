@@ -19,7 +19,7 @@ st.subheader("📝 Dados do Sistema")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.write("Matriz de Coeficientes (A) — *Preencha como uma planilha*")
+    st.write("Matriz de Coeficientes (A) — *Preencha como uma planilha-Use ponto como separador decimal*")
     # Cria uma matriz inicial preenchida com zeros para o usuário editar
     init_A = np.zeros((n, n))
     A_input = st.data_editor(init_A, key="matrix_A", hide_index=True)
